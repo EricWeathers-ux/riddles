@@ -1,12 +1,23 @@
 <html>
     <head>
+        <style>
+            body{
+                background-color: lightblue;
+                font-size: 30px;
+            }
+            button{
+                width: 90px;
+                height: 40px;
+            }
+        </style>
         <title>Welcome!</title>
     </head>
     <body>
-        <h1>Riddle</h1>
-        <p>{{riddle2["riddle"][0]}}</p>
-        <form method="post">
-            <input type="text" name="riddle" placeholder="What is the answer?"/>
+        <h1>You decoded your riddle!</h1>
+        <p>Now you have to solve your riddle</p>
+        <p>{{Aaron["riddle"][0]}}</p>
+        <form method="post" action="/index2">
+            <input type="text" name="riddle_answer" placeholder="What is the answer?"/>
             <input type="submit" value="Submit"/>
         </form>
 
